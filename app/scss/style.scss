@@ -10,7 +10,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: $black;
-
+    background-color: $white;
 }
 
 
@@ -21,3 +21,14 @@ body{
 @import "blocks/user";
 @import "blocks/nav";
 @import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/social";
+@import "blocks/works";
+@import "blocks/portfolio";
+@import "blocks/about";
+@import "blocks/reviews";
+
+
+
+// Helpers
+@import "blocks/helpers";

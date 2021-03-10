@@ -1,0 +1,13 @@
+.social{
+	display: flex;
+	margin-bottom: 45px;
+
+	&__link{
+		margin-right: 10px;
+
+		&:hover{
+			transform: translateY(-5px);
+			transition: transform .2s linear;
+		}
+	}
+}

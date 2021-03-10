@@ -3,15 +3,8 @@
 
 body, h1, h2, h3, h4, h5, h6{margin: 0;}
 
-a{text-decoration: none;}
-
-:focus,:active{outline: none;}
+a{cursor: pointer; text-decoration: none;}
 
 button{cursor: pointer;}
 
 ul li{list-style: none;}
-
-
-h1{
-	background-color: bisque;
-}

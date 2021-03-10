@@ -1,0 +1,21 @@
+.works{
+	margin: 4rem;
+
+	&__nav{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+		
+	}
+	&__nav-link{
+		margin: 0 1.7rem;
+
+		font-size: 1.2rem;
+		color: $black;
+		opacity: .7;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

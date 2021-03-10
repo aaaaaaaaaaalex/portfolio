@@ -12,5 +12,4 @@ $(function() {
         document.querySelector('body').classList.add('no-webp');
     }
 });
-	alert("HELLO!")
 });

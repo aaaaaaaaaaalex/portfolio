@@ -1,0 +1,45 @@
+.intro{
+
+
+	&__inner{
+		display: flex;
+		position: relative;
+		
+		background: url("../img/intro/symbols.png") right bottom no-repeat;
+
+		border-bottom: 1px solid rgba($gray, .3);
+		
+	}
+	&__content{
+		width: 50%;
+		padding: 90px 0 125px;
+	}
+	&__suptitle{
+		font-size: 3.2rem;
+		color: $black;
+		font-weight: 200;
+	}
+	&__title{
+		margin-bottom: 5px;
+
+		font-size: 4.5rem;
+		color: $black;
+		font-weight: 700;
+
+		
+	}
+	&__text{
+		margin-bottom: 25px;
+
+		font-size: 1.8rem;
+		color: $black;
+		font-weight: 400;
+		opacity: .7;
+	}
+	&__photo{
+		position: absolute;
+		bottom: -1px;
+		right: 0;
+		z-index: 1;
+	}
+}

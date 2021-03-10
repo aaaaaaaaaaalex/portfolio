@@ -1,0 +1,44 @@
+.about{
+	margin: 12.5rem 0;
+	max-width: 1090px;
+
+	&__inner{
+		display: flex;
+	}
+	&__photo{
+		width: 50%;
+	}
+	&__content{
+		width: 50%;
+		padding-left: 5rem;
+		margin-top: 3.5rem;
+	}
+	&__title{
+		font-size: 4.5rem;
+		font-weight: 700;
+		color: $black;
+		text-transform: uppercase;
+	}
+	&__bigtitle{
+		margin-bottom: 2rem;
+		position: relative;
+		margin-left: -20px;
+
+		font-size: 9.2rem;
+		font-weight: 700;
+		color: $black;
+		text-transform: uppercase;
+		opacity: .15;
+
+		line-height: 1.1;
+	}
+	&__text{
+		margin-bottom: 3rem;
+
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: $gray;
+		
+		line-height: 2;
+	}
+}
