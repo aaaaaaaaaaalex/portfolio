@@ -1,0 +1,94 @@
+.modal-work{
+	display: flex;
+
+
+	&__previews{
+		width: 65%;
+		position: relative;
+
+		overflow: hidden;
+	}
+	&__photo{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+
+		transform: translate3d(-50%,-50%,0);
+	}
+	&__content{
+		width: 35%;
+		position: relative;
+
+		padding: 5rem 8rem 1.5rem 2.5rem;
+	}
+	&__header{
+		margin-bottom: 3.3rem;
+	}
+	&__title{
+		margin-bottom: 2px;
+
+		font-size: 3.2rem;
+		color: $black;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__info{
+		font-size: 1.8rem;
+		color: $gray;
+		text-transform: uppercase;
+	}
+	&__info-divider{
+		margin: 0 1.5rem;
+	}
+	&__client{
+		margin-bottom: 3rem;
+	}
+	&__client-title{
+		font-size: 1.6rem;
+		color: $black;
+		font-weight: 700;
+	}
+	&__client-company{
+		font-size: 1.4rem;
+		color: $gray;
+		font-style: italic;
+	}
+	&__text{
+		margin-bottom: 13rem;
+		font-size: 1.2rem;
+		color: $gray;
+		font-weight: 300;
+		line-height: 2;
+	}
+	&__footer{
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+
+		padding: 0 2.5rem 1.5rem ;
+	}
+	&__btn{
+		font-size: 1.7rem;
+		text-transform: uppercase;
+		color: $black;
+
+		font-family: inherit;
+		background: 0;
+		border: 0;
+		padding: 0;
+
+		display: flex;
+		align-items: center;
+
+		& img{
+			display: block;
+		}
+	}
+
+}

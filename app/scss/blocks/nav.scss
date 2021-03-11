@@ -15,5 +15,8 @@
 		&.active{
 			border-bottom: 2px solid $black;
 		}
+		&--gray{
+			color: $gray-light;
+		}
 	}
 }

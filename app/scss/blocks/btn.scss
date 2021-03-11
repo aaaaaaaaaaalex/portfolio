@@ -21,8 +21,10 @@
 
 	&:hover{
 		background-color: $black;
+		border-color: $black;
 		color: $white;
 		transition: background-color .2s linear;
+		transition: border-color .2s linear;
 		transition: color .2s linear;
 		transition: box-shadow .2s linear;
 
@@ -38,6 +40,17 @@
 	}
 	&--sm{
 		padding: 0.7em 1.4em;
+	}
+	&--footer{
+		padding: .5rem 2rem;
+		background-color: $black;
+		border-color: $gray-light;
+		color: $gray-light;
+	}
+	&--footer:hover{
+		background-color: $gray-light;
+		border-color: $gray-light;
+		color: $black;
 	}
 	& + .btn{
 		margin-left: 1.5rem;

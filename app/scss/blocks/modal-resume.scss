@@ -1,0 +1,12 @@
+.modal-resume{
+	padding: 7rem 1rem;
+
+	&__title{
+		margin-bottom: 5.5rem;
+
+		font-size: 4.5rem;
+		color: $black;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}

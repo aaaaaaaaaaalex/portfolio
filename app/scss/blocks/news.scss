@@ -1,0 +1,33 @@
+.news{
+	margin-top: 21.5rem;
+	margin-bottom: 15.5rem;
+
+	&__header{
+		margin-bottom: 5.5rem;
+	}
+	&__title{
+		margin-bottom: 0.5rem;
+
+		font-size: 4.5rem;
+		color: $black;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__text{
+		font-size: 1.8rem;
+		color: $gray-second;
+		font-weight: 300;
+	}
+	&__footer{
+		margin-top: -35px;
+		text-align: right;
+	}
+	&__link{
+		font-size: 1.4rem;
+		color: $gray;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

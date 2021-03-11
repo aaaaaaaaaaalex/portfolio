@@ -11,6 +11,10 @@ body{
     font-size: 16px;
     color: $black;
     background-color: $white;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
 }
 
 
@@ -27,6 +31,12 @@ body{
 @import "blocks/portfolio";
 @import "blocks/about";
 @import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/articles";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
+@import "blocks/modal-resume";
 
 
 

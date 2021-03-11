@@ -1,0 +1,33 @@
+.footer{
+	background-color: $black;
+	padding: 2rem 0;
+
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+	}
+	&__copyright{
+		margin-right: 1.5rem;
+
+		font-size: 1.4rem;
+		color: $gray-light;
+
+		padding-right: 1rem;
+		border-right: 1px solid rgba($gray, .35);
+	}
+	&__social{
+		display: flex;
+		align-items: center;
+
+		a{
+			margin-right: 1.7rem;
+		}
+	}
+	&__nav{
+		display: flex;
+	}
+}
