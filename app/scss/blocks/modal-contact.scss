@@ -1,0 +1,15 @@
+.modal-contact{
+	display: flex;
+
+
+	&__left{
+		width: 47%;
+		padding: 3rem;
+
+	}
+	&__right{
+		width: 53%;
+
+		background: $gray url(https://placehold.it/480x700) center no-repeat;
+	}
+}

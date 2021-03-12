@@ -22,6 +22,10 @@
 		margin: auto;
 
 		background-color: #fff;
+
+		&--sm{
+			max-width: 900px;
+		}
 		
 	}
 	&__close{

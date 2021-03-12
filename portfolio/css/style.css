@@ -648,6 +648,10 @@ body.no-scroll {
   background-color: #fff;
 }
 
+.modal__dialog--sm {
+  max-width: 900px;
+}
+
 .modal__close {
   position: absolute;
   top: 1rem;
@@ -791,14 +795,157 @@ body.no-scroll {
   text-transform: uppercase;
 }
 
+.timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6rem auto;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #6a696b;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.timeline__col {
+  width: 50%;
+}
+
+.timeline__col--left {
+  padding-right: 5rem;
+}
+
+.timeline__col--right {
+  padding-left: 5rem;
+}
+
+.timeline__title {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2b2a2c;
+}
+
+.timeline__item {
+  margin-bottom: 4rem;
+}
+
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__date {
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #2b2a2c;
+}
+
+.timeline__subtitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+
+.timeline__position {
+  font-size: 1.4rem;
+  color: #2b2a2c;
+  font-style: italic;
+}
+
+.timeline__text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #6a696b;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.progress-bar {
+  margin-bottom: 3rem;
+}
+
+.progress-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+.progress-bar__title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #2b2a2c;
+}
+
+.progress-bar__right {
+  padding-left: 2rem;
+}
+
+.progress-bar__base {
+  width: 140px;
+  height: 6px;
+  background-color: #efefef;
+}
+
+.progress-bar__prozent {
+  height: 100%;
+  background-color: #6a696b;
+  -webkit-transition: width .2s linear;
+  -o-transition: width .2s linear;
+  transition: width .2s linear;
+}
+
+.modal-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-contact__left {
+  width: 47%;
+  padding: 3rem;
+}
+
+.modal-contact__right {
+  width: 53%;
+  background: #6a696b url(https://placehold.it/480x700) center no-repeat;
+}
+
 .text__center {
   text-align: center;
+}
+
+.text__right {
+  text-align: right;
 }
 
 .img__responsive {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .webp .intro__inner{ background: url(../img/intro/symbols.webp) right bottom no-repeat; }

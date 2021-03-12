@@ -1,0 +1,30 @@
+.progress-bar{
+	margin-bottom: 3rem;
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: .5rem;
+	}
+	&__title{
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: $black;
+	}
+	&__right{
+		padding-left: 2rem;
+	}
+	&__base{
+		width: 140px;
+		height: 6px;
+		background-color: $gray-fill;
+	}
+	&__prozent{
+		height: 100%;
+
+		background-color: $gray;
+
+		transition: width .2s linear;
+	}
+}

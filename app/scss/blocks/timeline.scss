@@ -1,0 +1,75 @@
+.timeline{
+	display: flex;
+	margin: 6rem auto;
+	width: 100%;
+	max-width: 768px;
+
+	position: relative;
+
+	&:before{
+		content: "";
+		display: block;
+		width: 1px;
+		height: 100%;
+
+		background-color:$gray;
+
+		position: absolute;
+		top: 0;
+		left: 50%;
+		z-index: 1;
+	}
+
+	&__col{
+		width: 50%;
+
+		&--left{
+			padding-right: 5rem;
+		}
+		&--right{
+			padding-left: 5rem;
+		}
+	}
+	&__title{
+		margin-bottom: 4rem;
+
+		font-size: 1.8rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $black;
+	}
+	&__item{
+		margin-bottom: 4rem;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__date{
+		margin-bottom: 1rem;
+
+		display: block;
+
+		font-size: 1.4rem;
+		text-decoration: underline;
+		color: $black;
+	}
+	&__subtitle{
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: $black;
+	}
+	&__position{
+		font-size: 1.4rem;
+		color: $black;
+		font-style: italic;
+	}
+	&__text{
+		margin-top: 1.5rem;
+
+		font-size: 1.2rem;
+		color: $gray;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+}

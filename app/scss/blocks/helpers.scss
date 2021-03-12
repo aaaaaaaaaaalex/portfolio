@@ -1,8 +1,14 @@
 .text__center{
 	text-align: center;
 }
+.text__right{
+	text-align: right;
+}
 .img__responsive{
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+.mb-0{
+	margin-bottom: 0;
 }
