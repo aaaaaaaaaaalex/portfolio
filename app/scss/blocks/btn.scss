@@ -18,7 +18,11 @@
 	border-radius: 1.4em;
 
 
-
+	&-header{
+		@media ($usm) {
+			display: none;
+		}
+	}
 	&:hover{
 		background-color: $black;
 		border-color: $black;
@@ -37,6 +41,10 @@
 		border-radius: 2.2em;
 		color: $gray;
 		padding: 1.07em 1.8em;
+
+		@media ($lg) {
+			min-width: 150px;
+		}
 	}
 	&--sm{
 		padding: 0.7em 1.4em;
@@ -46,6 +54,12 @@
 		background-color: $black;
 		border-color: $gray-light;
 		color: $gray-light;
+
+		@media ($sm) {
+			max-width: 150px;
+			margin-top: 20px;
+		}
+		
 	}
 	&--footer:hover{
 		background-color: $gray-light;

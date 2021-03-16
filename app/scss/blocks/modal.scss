@@ -1,5 +1,5 @@
 .modal{
-	display: flex;
+	display: none;
 
 	width: 100%;
 	height: 100%;
@@ -14,6 +14,10 @@
 
 	background-color: rgba(0,0,0, .8);
 
+	&.show{
+		display: flex;
+
+	}
 	&__dialog{
 		position: relative;
 
@@ -22,9 +26,8 @@
 		margin: auto;
 
 		background-color: #fff;
-
 		&--sm{
-			max-width: 900px;
+			min-width: 900px;
 		}
 		
 	}

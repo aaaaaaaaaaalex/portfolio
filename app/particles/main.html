@@ -30,8 +30,8 @@
 					</a>
 				</div><!-- /.social -->
 
-				<a class="btn btn--gray" type="button">hire me</a>
-				<button class="btn btn--gray" type="button">see my resume</button>
+				<a class="btn btn--gray" type="button" data-modal="#modal_hire_me">hire me</a>
+				<button class="btn btn--gray" type="button" data-modal="#modal_resume">see my resume</button>
 
 			</div><!-- /.intro__content -->
 			
@@ -48,21 +48,21 @@
 	<div class="container">
 
 		<div class="works__nav">
-			<a href="#" class="works__nav-link">All</a>
-			<a href="#" class="works__nav-link">App</a>
-			<a href="#" class="works__nav-link">Website</a>
-			<a href="#" class="works__nav-link">Interaction</a>
+			<a href="#" class="works__nav-link" data-filter="all">All</a>
+			<a href="#" class="works__nav-link" data-filter="app">App</a>
+			<a href="#" class="works__nav-link" data-filter="website">Website</a>
+			<a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
 		</div>
 
 		<div class="portfolio">
 
 
 
-			<div class="portfolio__col">
-				<div class="portfolio__item">
+			<div class="portfolio__col" data-cat="app">
+				<div class="portfolio__item" data-modal="#modal_project_1">
 					<img class="portfolio__img" src="https://placehold.it/370x300" alt="work">
 					<div class="portfolio__content">
-						<div class="portfolio__cat">category</div>
+						<div class="portfolio__cat">category: app</div>
 						<div class="portfolio__footer">
 							<div class="portfolio__title">project title</div>
 							<time class="portfolio__date" datetime="2020-05-15 19:00">2020</time>
@@ -70,11 +70,11 @@
 					</div>
 				</div>
 			</div><!-- /.portfolio__col -->
-			<div class="portfolio__col">
-				<div class="portfolio__item">
+			<div class="portfolio__col" data-cat="website">
+				<div class="portfolio__item" data-modal="#modal_project_2" >
 					<img class="portfolio__img" src="https://placehold.it/370x300" alt="work">
 					<div class="portfolio__content">
-						<div class="portfolio__cat">category</div>
+						<div class="portfolio__cat">category: website</div>
 						<div class="portfolio__footer">
 							<div class="portfolio__title">project title</div>
 							<time class="portfolio__date" datetime="2020-05-15 19:00">2020</time>
@@ -82,11 +82,11 @@
 					</div>
 				</div>
 			</div><!-- /.portfolio__col -->
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="interaction">
 				<div class="portfolio__item">
 					<img class="portfolio__img" src="https://placehold.it/370x300" alt="work">
 					<div class="portfolio__content">
-						<div class="portfolio__cat">category</div>
+						<div class="portfolio__cat">category: interaction</div>
 						<div class="portfolio__footer">
 							<div class="portfolio__title">project title</div>
 							<time class="portfolio__date" datetime="2020-05-15 19:00">2020</time>
@@ -94,11 +94,11 @@
 					</div>
 				</div>
 			</div><!-- /.portfolio__col -->
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="website">
 				<div class="portfolio__item">
 					<img class="portfolio__img" src="https://placehold.it/370x300" alt="work">
 					<div class="portfolio__content">
-						<div class="portfolio__cat">category</div>
+						<div class="portfolio__cat">category: website</div>
 						<div class="portfolio__footer">
 							<div class="portfolio__title">project title</div>
 							<time class="portfolio__date" datetime="2020-05-15 19:00">2020</time>
@@ -106,11 +106,11 @@
 					</div>
 				</div>
 			</div><!-- /.portfolio__col -->
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="interaction">
 				<div class="portfolio__item">
 					<img class="portfolio__img" src="https://placehold.it/370x300" alt="work">
 					<div class="portfolio__content">
-						<div class="portfolio__cat">category</div>
+						<div class="portfolio__cat">category: interaction</div>
 						<div class="portfolio__footer">
 							<div class="portfolio__title">project title</div>
 							<time class="portfolio__date" datetime="2020-05-15 19:00">2020</time>
@@ -118,11 +118,11 @@
 					</div>
 				</div>
 			</div><!-- /.portfolio__col -->
-			<div class="portfolio__col">
+			<div class="portfolio__col" data-cat="app">
 				<div class="portfolio__item">
 					<img class="portfolio__img" src="https://placehold.it/370x300" alt="work">
 					<div class="portfolio__content">
-						<div class="portfolio__cat">category</div>
+						<div class="portfolio__cat">category: app</div>
 						<div class="portfolio__footer">
 							<div class="portfolio__title">project title</div>
 							<time class="portfolio__date" datetime="2020-05-15 19:00">2020</time>
@@ -162,7 +162,7 @@
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sapiente inventore qui. Veritatis voluptates dicta possimus quis voluptatibus ut reiciendis nostrum, non qui delectus dolor asperiores sapiente natus doloremque, iusto praesentium laudantium deleniti ducimus itaque consequatur aperiam assumenda quae animi cumque! Cupiditate iusto eos maxime earum ducimus illum aspernatur reiciendis.</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sapiente inventore qui. Veritatis voluptates dicta possimus quis voluptatibus ut reiciendis nostrum, non qui delectus dolor asperiores sapiente natus doloremque, iusto praesentium laudantium deleniti ducimus itaque consequatur aperiam assumenda quae animi cumque! Cupiditate iusto eos maxime earum ducimus illum aspernatur reiciendis.</p>
 				</div>
-				<a class="btn btn--gray" type="button">hire me</a>
+				<a class="btn btn--gray" type="button" data-modal="#modal_hire_me">hire me</a>
 				<button class="btn btn--gray" type="button">see my resume</button>
 			</div><!-- /.about__content -->
 		</div><!-- /.about__inner -->
@@ -173,7 +173,7 @@
 
 
 
-<!-- Reviws -->
+<!-- Reviews -->
 <div class="reviews">
 	<div class="container">
 
@@ -276,16 +276,23 @@
 
 
 <!-- Modals -->
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_project_1">
 	<div class="modal__dialog">
 
-		<button class="modal__close" type="button">
+		<button class="modal__close" type="button" data-close>
 			<img src="img/modal-close.svg" alt="close">
 		</button>
 
 		<div class="modal-work">
 			<div class="modal-work__previews">
-				<img class="modal-work__photo" src="https://placehold.it/1000" alt="photo">
+				<div class="sliderSlider" data-slider="slick">
+					<div>
+						<img class="modal-work__photo " src="https://placehold.it/1000" alt="photo">
+					</div>
+					<div>
+						<img class="modal-work__photo" src="https://placehold.it/1000/333" alt="photo">
+					</div>
+				</div>
 			</div>
 			<div class="modal-work__content">
 				<div class="modal-work__header">
@@ -303,12 +310,59 @@
 				</div>
 
 				<div class="modal-work__footer">
-					<button class="modal-work__btn modal-work__btn--prev" type="button" >
-						<img src="img/arrow-prev.svg" alt="prev">
+					<button class="modal-work__btn modal-work__btn--prev slickPrev" type="button" >
+						<img class="modal-work__img-left" src="img/arrow-prev.svg" alt="prev">
 						Previos</button>
-					<button class="modal-work__btn modal-work__btn--next" type="button" >
+					<button class="modal-work__btn modal-work__btn--next slickNext" type="button" >
 						Next
-						<img src="img/arrow-next.svg" alt="prev">
+						<img class="modal-work__img-right" src="img/arrow-next.svg" alt="prev">
+						</button>
+				</div>
+			</div><!-- /.modal-work__content -->
+		</div><!-- /.modal-work -->
+
+	</div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+<div class="modal" id="modal_project_2">
+	<div class="modal__dialog">
+
+		<button class="modal__close" type="button" data-close>
+			<img src="img/modal-close.svg" alt="close">
+		</button>
+
+		<div class="modal-work">
+			<div class="modal-work__previews">
+				<div class="sliderSlider" data-slider="slick">
+					<div>
+						<img class="modal-work__photo " src="https://placehold.it/1000" alt="photo">
+					</div>
+					<div>
+						<img class="modal-work__photo" src="https://placehold.it/1000/333" alt="photo">
+					</div>
+				</div>
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">project title 2</h3>
+					<div class="modal-work__info">
+						category <span class="modal-work__info-divider" >|</span> 2020
+					</div>
+				</div>
+				<div class="modal-work__client">
+					<div class="modal-work__client-title" >Client:</div>
+					<div class="modal-work__client-company" >Creative Agency</div>
+				</div>
+				<div class="modal-work__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus. Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoreet pellentesque lacus, eget varius massa mattis quis. Nunc ultrices urna eu nunc lobortis pulvinar. Duis viverra, quam non imperdiet scelerisque, urna nunc consequat velit, in mollis erat nibh in libero.</p>
+				</div>
+
+				<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev slickPrev" type="button" >
+						<img class="modal-work__img-left" src="img/arrow-prev.svg" alt="prev">
+						Previos</button>
+					<button class="modal-work__btn modal-work__btn--next slickNext" type="button" >
+						Next
+						<img class="modal-work__img-right" src="img/arrow-next.svg" alt="prev">
 						</button>
 				</div>
 			</div><!-- /.modal-work__content -->
@@ -319,10 +373,10 @@
 
 
 
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_resume">
 	<div class="modal__dialog">
 
-		<button class="modal__close" type="button">
+		<button class="modal__close" type="button" data-close>
 			<img src="img/modal-close.svg" alt="close">
 		</button>
 
@@ -470,10 +524,10 @@
 
 
 
-<div class="modal">
+<div class="modal" id="modal_hire_me">
 	<div class="modal__dialog modal__dialog--sm">
 
-		<button class="modal__close" type="button">
+		<button class="modal__close" type="button" data-close>
 			<img src="img/modal-close.svg" alt="close">
 		</button>
 
@@ -482,21 +536,34 @@
 				<h3 class="modal-resume__title mb-0">let's talk</h3>
 				<h4 class="modal-resume__subtitle">call me or send me a request</h4>
 
-				<ul class="contact__info">
-					<li>
+				<ul class="modal-contact__info">
+					<li class="modal-contact__info-item">
+						<img class="modal-contact__info-img" src="img/phone.svg" alt="phone">
 						(200) 100 3000
 					</li>
-					<li>
+					<li class="modal-contact__info-item">
+						<img class="modal-contact__info-img" src="img/mail.svg" alt="mail">
 						designer@ui43.com
 					</li>
 				</ul>
-			</div>
-			<div class="modal-contact__right"></div>
-			
 
-			
+				<form class="form" action="/" method="POST">
 
-		</div><!-- /.modal-hire-me -->
+					<div class="form__group">
+						<label class="form__label" for="input-email">Adress e-mail</label>
+						<input class="form__input" id="input-email" name="input-email" type="text" placeholder="Adress e-mail">
+					</div>
+					<div class="form__group">
+						<label class="form__label" for="input-text">Request</label>
+						<textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+					</div>
+				
+					<div class="text__right">
+						<button class="btn" type="button">send</button>
+					</div>
+				</form>
+			</div><!-- /.modal-contact__left -->
+		</div><!-- /.modal-contact -->
 
 	</div><!-- /.modal__dialog -->
 </div><!-- /.modal -->

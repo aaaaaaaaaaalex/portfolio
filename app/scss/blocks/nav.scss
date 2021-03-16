@@ -2,6 +2,9 @@
 	display: flex;
 	align-items: center;
 
+	@media ($md) {
+		display: none;
+	}
 	&__link{
 		margin-right: 40px;
 
@@ -17,6 +20,22 @@
 		}
 		&--gray{
 			color: $gray-light;
+		}
+		&--media-sm{
+			@media ($sm) {
+				margin: 0 10px;
+			}
+		}
+	}
+	&--vsmd{
+		@media ($md) {
+			display: flex;
+		}
+		@media ($sm) {
+			flex-wrap: wrap;
+		}
+		@media ($usm) {
+			justify-content: center;
 		}
 	}
 }

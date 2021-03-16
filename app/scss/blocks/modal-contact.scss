@@ -1,15 +1,31 @@
 .modal-contact{
 	display: flex;
 
-
+	background: url("https://placehold.it/480x700") right center no-repeat;
 	&__left{
 		width: 47%;
 		padding: 3rem;
 
 	}
-	&__right{
-		width: 53%;
+	&__info{
+		margin: 3rem 0 4rem;
+		padding: 0;
 
-		background: $gray url(https://placehold.it/480x700) center no-repeat;
+		&-item{
+			display: flex;
+			align-items: center;
+			margin-bottom: 1rem;
+
+			font-size: 1.4rem;
+			color: $black;
+			font-weight: 300;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		&-img{
+			display: block;
+			margin-right: 1rem;
+		}
 	}
 }

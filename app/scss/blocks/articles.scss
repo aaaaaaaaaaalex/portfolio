@@ -6,13 +6,26 @@
 	&__col{
 		width: 33.3333%;
 		padding: 0 1.5rem;
+
+			@media ($md) {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 	&__item{
 		margin-bottom: 5rem;
+
+		@media ($md) {
+			text-align: center;
+		}
 	}
 	&__header{
 		position: relative;
 		margin-bottom: 2rem;
+
+		@media ($md) {
+			text-align: center;
+		}
 	}
 	&__date{
 		width: 77px;

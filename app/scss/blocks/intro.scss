@@ -9,15 +9,29 @@
 
 		border-bottom: 1px solid rgba($gray, .3);
 		
+		
 	}
 	&__content{
 		width: 50%;
-		padding: 90px 0 125px;
+		padding: 9rem 0 12.5rem;
+
+		@media ($lg) {
+			padding: 5rem 0 5rem;
+
+		}
+		@media ($md) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 	&__suptitle{
 		font-size: 3.2rem;
 		color: $black;
 		font-weight: 200;
+
+		@media ($lg) {
+			font-size: 2.2rem;
+		}
 	}
 	&__title{
 		margin-bottom: 5px;
@@ -26,7 +40,9 @@
 		color: $black;
 		font-weight: 700;
 
-		
+		@media ($lg) {
+			font-size: 3.5rem;
+		}
 	}
 	&__text{
 		margin-bottom: 25px;
@@ -41,5 +57,12 @@
 		bottom: -1px;
 		right: 0;
 		z-index: 1;
+
+		@media ($lg) {
+			width: 350px;
+		}
+		@media ($md) {
+			display: none;
+		}
 	}
 }

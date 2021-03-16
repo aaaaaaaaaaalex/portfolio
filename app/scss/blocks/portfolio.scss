@@ -6,6 +6,13 @@
 	&__col{
 		width: 33.3333%;
 		padding: 1.5rem;
+
+		@media ($md) {
+			width: 50%;
+		}
+		@media ($sm) {
+			width: 100%;
+		}
 	}
 	&__item{
 		overflow: hidden;
@@ -19,6 +26,7 @@
 	}
 	&__img{
 		display: block;
+		width: 100%;
 		max-width: 100%;
 		height: auto;
 	}
@@ -41,4 +49,7 @@
 		color: $black;
 		font-weight: 700;
 	}
+}
+.hide{
+	display: none;
 }
