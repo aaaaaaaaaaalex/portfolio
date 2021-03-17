@@ -1,11 +1,16 @@
 .progress-bar{
 	margin-bottom: 3rem;
 
+	
 	&__item{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: .5rem;
+
+		@media ($usm) {
+			justify-content: center;
+		}
 	}
 	&__title{
 		font-size: 1.4rem;
@@ -14,6 +19,10 @@
 	}
 	&__right{
 		padding-left: 2rem;
+
+		@media ($md) {
+			display: none;
+		}
 	}
 	&__base{
 		width: 140px;

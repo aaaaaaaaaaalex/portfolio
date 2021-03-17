@@ -1,11 +1,15 @@
 .timeline{
 	display: flex;
+	flex-wrap: wrap;
 	margin: 6rem auto;
 	width: 100%;
 	max-width: 768px;
 
 	position: relative;
 
+	@media ($usm) {
+		margin: 3rem auto;
+	}
 	&:before{
 		content: "";
 		display: block;
@@ -18,6 +22,10 @@
 		top: 0;
 		left: 50%;
 		z-index: 1;
+
+		@media ($usm) {
+			display: none;
+		}
 	}
 
 	&__col{
@@ -25,9 +33,27 @@
 
 		&--left{
 			padding-right: 5rem;
+
+			@media ($usm) {
+				padding-right: 0;
+				text-align: center;
+			}
 		}
 		&--right{
 			padding-left: 5rem;
+
+			@media ($usm) {
+				padding-left: 0;
+				text-align: center;
+			}
+		}
+		@media ($usm) {
+			width: 100%;
+			margin-bottom: 4rem;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
 		}
 	}
 	&__title{
@@ -37,12 +63,23 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $black;
+
+		@media ($usm) {
+			margin-bottom: 2rem;
+		}
 	}
 	&__item{
 		margin-bottom: 4rem;
 
 		&:last-child{
 			margin-bottom: 0;
+		}
+		@media ($usm) {
+			margin-bottom: 2rem;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
 		}
 	}
 	&__date{
