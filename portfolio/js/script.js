@@ -87,4 +87,11 @@ $(function() {
 
 
 
+	// Menu Nav Toggle
+	$("#navToggle").on("click", function(event) {
+		event.preventDefault();
+
+		$("#nav").toggleClass("show");
+	});
+
 });

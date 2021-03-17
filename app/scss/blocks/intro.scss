@@ -1,6 +1,8 @@
 .intro{
 
-
+	@media ($md) {
+		margin-top: 100px;
+	}
 	&__inner{
 		display: flex;
 		position: relative;

@@ -1,6 +1,17 @@
 .header{
 	padding: 1.8rem 0;
+	position: relative;
 
+	@media ($md) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+
+		background-color: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+	}
 	&__inner{
 	display: flex;
 	justify-content: space-between;

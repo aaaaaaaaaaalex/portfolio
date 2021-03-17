@@ -56,6 +56,7 @@ body.no-scroll {
 
 .header {
   padding: 1.8rem 0;
+  position: relative;
 }
 
 .header__inner {
@@ -118,6 +119,8 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav__link {
@@ -377,6 +380,10 @@ body.no-scroll {
 
 .about__photo {
   width: 50%;
+}
+
+.about__photo img {
+  margin: 0 auto;
 }
 
 .about__content {
@@ -1200,14 +1207,51 @@ body.no-scroll {
 }
 
 @media (max-width: 767px) {
-  .nav {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-header {
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: right;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-header.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .nav__link-header {
+    width: 100%;
+    margin-right: 0;
+    padding: 1rem 2rem;
   }
 
   .nav--vsmd {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .intro {
+    margin-top: 100px;
   }
 
   .intro__content {
@@ -1246,15 +1290,33 @@ body.no-scroll {
         -ms-flex-order: 1;
             order: 1;
     margin-bottom: 3rem;
+    text-align: center;
+    padding-left: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__bigtitle {
+    margin-left: 0;
+  }
+
+  .news {
+    margin-top: 16.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .news__title {
+    font-size: 2.5rem;
   }
 
   .articles__col {
     width: 100%;
-    margin: 0 auto;
   }
 
   .articles__item {
-    text-align: center;
+    max-width: 370px;
+    margin: 0 auto 5rem;
   }
 
   .articles__header {
@@ -1283,6 +1345,14 @@ body.no-scroll {
 
   .portfolio__col {
     width: 100%;
+  }
+
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__bigtitle {
+    font-size: 4rem;
   }
 
   .footer__content {
@@ -1326,6 +1396,15 @@ body.no-scroll {
 
   .btn-header {
     display: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn + .btn {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
 
