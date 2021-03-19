@@ -1,5 +1,5 @@
-@import "reset.scss";
-@import "vars.scss";
+@import "reset";
+@import "vars";
 
 
 html{
@@ -43,6 +43,7 @@ body{
 @import "blocks/form";
 @import "blocks/slider";
 @import "blocks/burger";
+@import "modal-plug";
 
 
 

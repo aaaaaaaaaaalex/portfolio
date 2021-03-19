@@ -1,5 +1,5 @@
 .about{
-	margin: 12.5rem 0;
+	margin: 12.5rem auto;
 	max-width: 1090px;
 
 	@media ($md) {
@@ -32,6 +32,8 @@
 		@media ($md) {
 			width: 100%;
 			order: 1;
+
+			
 			margin-bottom: 3rem;
 
 			text-align: center;
